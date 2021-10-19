@@ -1,13 +1,18 @@
 body {
   font-family: "Roboto", sans-serif;
-  margin: 130px auto;
+  padding-top: 130px;
+  margin: 2px;
+  border: black solid 4px;
+  background-color: rgba(247, 207, 202, 0.774);
 }
+
 .navbar {
-  padding: 20px 70px 0px;
+  padding: 10px 70px 0px;
+  margin: 2px;
+  border: black solid 2px;
 }
 .introduction {
   padding: 50px 60px;
-  margin-left: 30px;
 }
 .introduction p {
   font-size: 25px;
@@ -39,6 +44,91 @@ body {
 .about-link:hover {
   color: black;
 }
+
+section {
+  margin-top: 100px;
+}
+section img {
+  padding: 4px;
+  border: black solid 1px;
+}
+
+section h1 {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+section p {
+  border: black solid 1px;
+  text-align: justify;
+  padding: 40px;
+  margin-top: 25px;
+  font-size: 20px;
+  background-color: white;
+  box-shadow: 2px 11px 23px rgba(0, 0, 0, 0.1);
+}
+
+section .buddhabowl-page-description h2,
+.responsive-portfolio-description h2 {
+  text-align: end;
+  font-size: 40px;
+}
+section .buddhabowl-page-description,
+.responsive-portfolio-description {
+  position: relative;
+  right: 80px;
+}
+section .weather-app-description {
+  position: relative;
+  left: 80px;
+}
+section .buddhabowl-page-project,
+.weather-app-project,
+.responsive-portfolio-project {
+  margin-bottom: 35px;
+}
+section .weather-app-description h2 {
+  text-align: start;
+  font-size: 40px;
+}
+section .tech-list-weather,
+.project-links-weather {
+  padding-left: 0;
+}
+
+section .tech-list-buddha,
+.tech-list-weather,
+.project-links-buddha,
+.project-links-weather,
+.tech-list-portfolio,
+.project-links-portfolio {
+  list-style: none;
+  display: flex;
+}
+section .tech-list-buddha,
+.project-links-buddha,
+.tech-list-portfolio,
+.project-links-portfolio {
+  justify-content: flex-end;
+}
+section .tech-list-weather,
+.project-links-weather {
+  justify-content: flex-start;
+}
+section .project-links-buddha,
+.project-links-portfolio {
+  position: relative;
+  bottom: 20px;
+}
+section .project-links-weather {
+  position: relative;
+  bottom: 20px;
+}
+section li {
+  font-size: 25px;
+  padding: 10px;
+}
+
 @media (max-width: 992px) {
   .introduction {
     padding: 0;
@@ -46,6 +136,18 @@ body {
   }
   .navbar {
     padding: 0px;
+  }
+  section h1 {
+    text-align: center;
+  }
+  section .buddhabowl-page-description,
+  .responsive-portfolio-description {
+    position: relative;
+    right: 0px;
+  }
+  section .weather-app-description {
+    position: relative;
+    left: 0px;
   }
 }
 @media (max-width: 576px) {
@@ -76,6 +178,27 @@ body {
     margin-top: 35px;
   }
   body {
-    margin: 70px auto;
+    padding-top: 70px;
+  }
+
+  section li {
+    font-size: 20px;
+    padding: 5px;
+  }
+  section .buddhabowl-page-project,
+  .weather-app-project,
+  .responsive-portfolio-project {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 768px) {
+  section img {
+    display: none;
+  }
+  .buddhabowl-page-project,
+  .weather-app-project,
+  .responsive-portfolio-project {
+    text-align: center;
+    flex: none;
   }
 }
