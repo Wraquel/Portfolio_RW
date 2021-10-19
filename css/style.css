@@ -2,7 +2,9 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 130px auto;
 }
-
+.navbar {
+  padding: 20px 70px 0px;
+}
 .introduction {
   padding: 50px 60px;
   margin-left: 30px;
@@ -11,6 +13,7 @@ body {
   font-size: 28px;
   font-weight: bolder;
   line-height: 3;
+  text-underline-position: under;
   text-decoration: underline;
 }
 .i-love {
@@ -32,10 +35,13 @@ body {
 .about-link:hover {
   color: black;
 }
-@media (max-width: 990px) {
+@media (max-width: 992px) {
   .introduction {
     padding: 0;
     margin-left: 0;
+  }
+  .navbar {
+    padding: 0px;
   }
 }
 @media (max-width: 576px) {
