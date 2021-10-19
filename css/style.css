@@ -52,11 +52,25 @@ body {
   .i-love {
     font-weight: bold;
     font-size: 30px;
+    line-height: 0.5;
   }
   .hero h2 {
     font-size: 20px;
   }
   .about-button {
     margin-top: 40px;
+  }
+  .logo {
+    width: 50px;
+  }
+  .about-link {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+  .about-button {
+    margin-top: 35px;
+  }
+  body {
+    margin: 70px auto;
   }
 }
