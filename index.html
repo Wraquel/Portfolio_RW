@@ -42,9 +42,14 @@
       "
     >
       <div class="container-fluid">
-        <a class="navbar-brand ms-3" href="/index.html">
-          <img src="/images/logo.png" alt="logo" width="60px"
-        /></a>
+        <a class="navbar-brand" href="/" title="Homepage">
+          <img
+            src="/images/logo.png"
+            alt="logo"
+            class="img-fluid"
+            width="60px"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -56,25 +61,28 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="d-flex">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item px-4">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/index.html"
-                  >HOME</a
-                >
-              </li>
-              <li class="nav-item px-4">
-                <a class="nav-link" href="/about.html">ABOUT ME</a>
-              </li>
-              <li class="nav-item px-4">
-                <a class="nav-link" href="/about.html#contact">CONTACT</a>
-              </li>
-            </ul>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-4">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/"
+                title="Homepage"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="/about.html" title="About Me"
+                >ABOUT ME</a
+              >
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="/contact.html" title="Contact Raquel W"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -82,15 +90,16 @@
     <div class="container text-center">
       <div class="hero">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-lg-6">
             <img
               src="/images/my_photo_logo.png"
+              class="logo-photo images img-fluid"
               alt="Image Photo"
               title="Logo Photo"
               width="700px"
             />
           </div>
-          <div class="col-sm-6">
+          <div class="col-lg-6">
             <div class="introduction">
               <h2>
                 <span class="hello">HELLO THERE</span>

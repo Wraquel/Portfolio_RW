@@ -22,7 +22,6 @@ body {
   margin-top: 65px;
 }
 .about-link {
-  margin-top: 20px;
   text-decoration: none;
   padding: 20px 30px;
   background-color: white;
@@ -32,4 +31,26 @@ body {
 }
 .about-link:hover {
   color: black;
+}
+@media (max-width: 990px) {
+  .introduction {
+    padding: 0;
+    margin-left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .hello {
+    font-size: 24px;
+    line-height: 2;
+  }
+  .i-love {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
+  .about-button {
+    margin-top: 40px;
+  }
 }
