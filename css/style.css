@@ -6,6 +6,10 @@ body {
   background-color: rgba(247, 207, 202, 0.774);
 }
 
+a:visited {
+  color: black;
+}
+
 .navbar {
   padding: 10px 70px 0px;
   margin: 2px;
