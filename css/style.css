@@ -1,8 +1,9 @@
 body {
   font-family: "Roboto", sans-serif;
   padding-top: 130px;
-  margin: 2px;
+  margin: 0px 2px 2px 2px;
   border: black solid 4px;
+  border-top: none;
   background-color: rgba(247, 207, 202, 0.774);
 }
 
@@ -12,8 +13,10 @@ a:visited {
 
 .navbar {
   padding: 10px 70px 0px;
-  margin: 2px;
-  border: black solid 2px;
+  margin: 0px 2px 2px 2px;
+  border: black solid 4px;
+  border-bottom: none;
+  border-top: none;
 }
 .introduction {
   padding: 50px 60px;
@@ -49,12 +52,34 @@ a:visited {
   color: black;
 }
 
-section {
-  margin-top: 100px;
+.hero {
+  margin-bottom: 50px;
 }
 section img {
   padding: 4px;
   border: black solid 1px;
+}
+section .lines {
+  width: 95%;
+  position: relative;
+  margin-bottom: 20px;
+}
+section .lines::after,
+.lines::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 1px;
+  background: black;
+  width: 33%;
+  top: 45%;
+}
+section .lines::after {
+  left: 130px;
+  right: 0px;
+}
+section .lines::before {
+  right: 7px;
 }
 
 section h1 {
@@ -141,8 +166,9 @@ section li {
   .navbar {
     padding: 0px;
   }
-  section h1 {
-    text-align: center;
+  section .lines::after {
+    left: 300px;
+    right: 0px;
   }
   section .buddhabowl-page-description,
   .responsive-portfolio-description {
@@ -204,5 +230,14 @@ section li {
   .responsive-portfolio-project {
     text-align: center;
     flex: none;
+  }
+  section .lines::after,
+  .lines::before {
+    display: none;
+  }
+  section h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
   }
 }
