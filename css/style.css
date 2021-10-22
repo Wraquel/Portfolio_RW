@@ -1,16 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
   padding-top: 130px;
+  padding-bottom: 130px;
   margin: 0px 2px 2px 2px;
   border: black solid 4px;
   border-top: none;
   background-color: rgba(247, 207, 202, 0.774);
 }
-
-a:visited {
-  color: black;
-}
-
 .navbar {
   padding: 10px 70px 0px;
   margin: 0px 2px 2px 2px;
@@ -18,46 +14,54 @@ a:visited {
   border-bottom: none;
   border-top: none;
 }
-.introduction {
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+header .hero {
+  margin-bottom: 40px;
+}
+
+header .introduction {
   padding: 50px 60px;
 }
-.introduction p {
-  font-size: 25px;
+header .introduction p {
+  font-size: 30px;
   line-height: 1;
 }
-.hello {
-  font-size: 28px;
+
+header .name {
+  font-size: 50px;
   font-weight: bolder;
-  line-height: 3;
-  text-underline-position: under;
-  text-decoration: underline;
-}
-.i-love {
   line-height: 2;
-  font-weight: bold;
-  font-size: 40px;
 }
-.about-button {
+
+header .about-button {
   margin-top: 65px;
 }
-.about-link {
+header .about-link {
   text-decoration: none;
   padding: 20px 30px;
   background-color: white;
   border: black solid 1px;
-  color: black;
   font-size: 20px;
 }
-.about-link:hover {
-  color: black;
-}
 
-.hero {
-  margin-bottom: 50px;
+header .about,
+.contact-me-title {
+  position: relative;
+  left: -320px;
 }
-section img {
-  padding: 4px;
-  border: black solid 1px;
+header .about-me-title,
+.contact-me-title {
+  font-size: 70px;
+  font-weight: bolder;
+}
+header .logo-home {
+  position: relative;
+  bottom: -70px;
 }
 section .lines {
   width: 95%;
@@ -86,7 +90,10 @@ section h1 {
   text-align: left;
   margin-bottom: 60px;
 }
-
+section .description-about {
+  position: relative;
+  margin-top: -95px;
+}
 section p {
   border: black solid 1px;
   text-align: justify;
@@ -96,29 +103,41 @@ section p {
   background-color: white;
   box-shadow: 2px 11px 23px rgba(0, 0, 0, 0.1);
 }
+section .images-projects,
+.photo-about-me {
+  padding: 4px;
+  border: black solid 1px;
+}
 
-section .buddhabowl-page-description h2,
-.responsive-portfolio-description h2 {
-  text-align: end;
+section .photo-about-me {
+  position: relative;
+  top: -350px;
+}
+section h2 {
   font-size: 40px;
 }
-section .buddhabowl-page-description,
-.responsive-portfolio-description {
+section .buddhabowl-description h2,
+.portfolio-description h2 {
+  text-align: end;
+}
+
+section .weather-description h2 {
+  text-align: start;
+}
+
+section .buddhabowl-description,
+.portfolio-description {
   position: relative;
   right: 80px;
 }
-section .weather-app-description {
+section .weather-description {
   position: relative;
   left: 80px;
 }
-section .buddhabowl-page-project,
-.weather-app-project,
-.responsive-portfolio-project {
+section .buddhabowl-project,
+.weather-project,
+.portfolio-project {
   margin-bottom: 35px;
-}
-section .weather-app-description h2 {
-  text-align: start;
-  font-size: 40px;
 }
 section .tech-list-weather,
 .project-links-weather {
@@ -145,89 +164,65 @@ section .tech-list-weather,
   justify-content: flex-start;
 }
 section .project-links-buddha,
-.project-links-portfolio {
+.project-links-portfolio,
+.project-links-weather {
   position: relative;
   bottom: 20px;
 }
-section .project-links-weather {
-  position: relative;
-  bottom: 20px;
+
+section .contact-options {
+  list-style: none;
 }
 section li {
   font-size: 25px;
   padding: 10px;
 }
-
+section .image-contact {
+  border: none;
+}
+.contact-options h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+.contact-options span,
+.call-me span {
+  font-size: 20px;
+}
+@media (max-width: 1200px) {
+  header .about,
+  .contact-me-title {
+    position: unset;
+  }
+  section .photo-about-me {
+    position: unset;
+  }
+}
 @media (max-width: 992px) {
+  .navbar {
+    padding: 0px;
+  }
   .introduction {
     padding: 0;
     margin-left: 0;
-  }
-  .navbar {
-    padding: 0px;
   }
   section .lines::after {
     left: 300px;
     right: 0px;
   }
-  section .buddhabowl-page-description,
-  .responsive-portfolio-description {
+  section .buddhabowl-description,
+  .portfolio-description {
     position: relative;
     right: 0px;
   }
-  section .weather-app-description {
+  section .weather-description {
     position: relative;
     left: 0px;
   }
 }
-@media (max-width: 576px) {
-  .hello {
-    font-size: 24px;
-    line-height: 2;
-  }
-  .i-love {
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 0.5;
-  }
-  .introduction p {
-    font-size: 20px;
-    line-height: 1;
-  }
-  .about-button {
-    margin-top: 40px;
-  }
-  .logo {
-    width: 50px;
-  }
-  .about-link {
-    padding: 15px 20px;
-    font-size: 18px;
-  }
-  .about-button {
-    margin-top: 35px;
-  }
-  body {
-    padding-top: 70px;
-  }
-
-  section li {
-    font-size: 20px;
-    padding: 5px;
-  }
-  section .buddhabowl-page-project,
-  .weather-app-project,
-  .responsive-portfolio-project {
-    margin-bottom: 0px;
-  }
-}
 @media (max-width: 768px) {
-  section img {
-    display: none;
-  }
-  .buddhabowl-page-project,
-  .weather-app-project,
-  .responsive-portfolio-project {
+  .buddhabowl-project,
+  .weather-project,
+  .portfolio-project {
     text-align: center;
     flex: none;
   }
@@ -239,5 +234,49 @@ section li {
     text-align: center;
     text-decoration: underline;
     text-underline-position: under;
+  }
+  section .images-projects,
+  .photo-about-me {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding-top: 70px;
+  }
+  .logo {
+    width: 50px;
+  }
+  header .about-me-title,
+  .contact-me-title {
+    font-size: 55px;
+    font-weight: normal;
+  }
+  header .introduction p {
+    font-size: 20px;
+    line-height: 1;
+  }
+  header .about-button {
+    margin-top: 40px;
+  }
+  header .about-link {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+  section .buddhabowl-project,
+  .weather-project,
+  .portfolio-project {
+    margin-bottom: 0px;
+  }
+  section h2 {
+    font-size: 30px;
+  }
+  .image-contact {
+    width: 300px;
+  }
+  section li {
+    font-size: 20px;
+    padding: 5px;
   }
 }
