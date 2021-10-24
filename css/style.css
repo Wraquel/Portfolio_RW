@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  padding-top: 95px;
+  padding: 95px 95px 0px;
   margin: 0px 2px 2px 2px;
   border: black solid 4px;
   border-top: none;
@@ -26,6 +26,7 @@ header .hero {
 header .introduction {
   padding: 115px 100px;
   text-align: justify;
+  font-size: 3rem;
 }
 
 .about-button {
@@ -51,14 +52,11 @@ header .about-me-title,
   font-size: 60px;
   font-weight: bolder;
 }
-header .logo-home {
-  position: relative;
-  bottom: -70px;
-}
 
 section h1 {
   font-size: 55px;
   margin-bottom: 60px;
+  font-weight: bold;
 }
 
 section p {
@@ -224,7 +222,7 @@ footer p {
 
 @media (max-width: 576px) {
   body {
-    padding-top: 70px;
+    padding: 70px 0px 0px;
   }
   .logo {
     width: 50px;
