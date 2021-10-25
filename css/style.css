@@ -138,6 +138,7 @@ section .project-links-buddha,
 
 section .contact-options {
   list-style: none;
+  padding-inline-start: 0px;
 }
 section li {
   font-size: 25px;
@@ -180,6 +181,7 @@ footer p {
 .open-sourced a {
   font-size: 1rem;
   padding: 2px;
+  font-weight: bold;
 }
 
 @media (max-width: 1200px) {
@@ -235,7 +237,7 @@ footer p {
   }
   header .about-me-title,
   .contact-me-title {
-    font-size: 50px;
+    font-size: 48px;
   }
   .image-about {
     width: 300px;
