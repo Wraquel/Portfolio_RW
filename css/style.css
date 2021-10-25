@@ -19,6 +19,10 @@ a:link {
 a:visited {
   color: black;
 }
+a:hover {
+  color: #1ab980;
+}
+
 header .hero {
   margin-bottom: 40px;
 }
@@ -42,7 +46,12 @@ header .about-link {
   border: black solid 1px;
   font-size: 20px;
 }
-
+.about-button a:hover {
+  color: black;
+}
+.email-button a:hover {
+  color: black;
+}
 header .about,
 .contact-me-title {
   margin-top: 40px;
@@ -119,6 +128,7 @@ section .tech-list-buddha,
   list-style: none;
   display: flex;
 }
+
 section .tech-list-buddha,
 .project-links-buddha,
 .tech-list-portfolio,
