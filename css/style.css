@@ -125,14 +125,15 @@ section h1 {
   background-color: whitesmoke;
   margin-bottom: 100px;
 }
-.btn-project {
+button {
   border: black solid 1px;
+  background-color: white;
   font-size: 16px;
   padding: 3px 7px;
 }
 button:hover {
-  background-color: chartreuse;
-  transition: all 2s ease-out;
+  background-color: #f233d8;
+  transition: all 1s ease;
 }
 section .col-md-6 {
   margin-bottom: 115px;
@@ -143,8 +144,13 @@ section .text-box {
 section i {
   font-size: 23px;
 }
+section i:hover {
+  position: relative;
+  bottom: -2px;
+  transition: 1s;
+}
 .about-me p {
-  background-color: rgb(77, 138, 157);
+  background-color: rgb(129, 189, 207);
 }
 .about-me .second-text-box {
   margin: 10px;
@@ -164,23 +170,39 @@ section .img-projects {
   padding: 4px;
   border: black solid 1px;
 }
-section #img-dictionary:hover {
-  transform: translate(70px, -10px);
+
+#weather-vanilla:hover #img-weather-vanilla {
+  transition: 1s;
+  left: 20px;
 }
-section #img-weather-vanilla:hover {
-  transform: translate(70px, -10px);
+#img-weather-vanilla {
+  background-color: rgb(176, 158, 120);
+  transition: 1s;
+  z-index: -1;
+  position: relative;
+  left: -10px;
 }
-section #img-weather-react:hover {
-  transform: translate(-60px, 10px);
+#weather-react:hover #img-weather-react {
+  transition: 1s;
+  right: 20px;
 }
-section #img-dictionary {
-  background-color: rgb(77, 138, 157);
-}
-section #img-weather-vanilla {
-  background-color: rgb(199, 173, 123);
-}
-section #img-weather-react {
+#img-weather-react {
   background-color: rgb(194, 107, 217);
+  transition: 1s;
+  z-index: -1;
+  position: relative;
+  right: -10px;
+}
+#dictionary:hover #img-dictionary {
+  transition: 1s;
+  left: 20px;
+}
+#img-dictionary {
+  background-color: rgb(77, 138, 157);
+  transition: 1s;
+  z-index: -1;
+  position: relative;
+  left: -10px;
 }
 
 section h2 {
@@ -231,9 +253,6 @@ footer .email-link {
 .email-button {
   margin-top: 30px;
   margin-bottom: 90px;
-}
-.email-button a:hover {
-  color: black;
 }
 footer {
   margin-top: 70px;
