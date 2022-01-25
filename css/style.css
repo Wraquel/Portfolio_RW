@@ -1,199 +1,3 @@
-body {
-  font-family: "Roboto", sans-serif;
-  padding: 95px 95px 0px;
-  margin: 0px 2px 2px 2px;
-  border: black solid 4px;
-  border-top: none;
-  background-color: rgba(247, 207, 202, 0.774);
-}
-.navbar {
-  padding: 10px 70px 0px;
-  margin: 0px 2px 2px 2px;
-  border: black solid 4px;
-  border-bottom: none;
-  border-top: none;
-}
-a:link {
-  color: black;
-}
-a:visited {
-  color: black;
-}
-a:hover {
-  color: #1ab980;
-}
-
-header .hero {
-  margin-bottom: 40px;
-}
-
-header .introduction {
-  padding: 115px 100px;
-  text-align: justify;
-}
-header .introduction h1 {
-  font-size: 45px;
-}
-
-.about-button {
-  margin-top: 65px;
-  text-align: center;
-}
-header .about-link {
-  text-decoration: none;
-  padding: 20px 30px;
-  background-color: white;
-  border: black solid 1px;
-  font-size: 20px;
-}
-.about-button a:hover {
-  color: black;
-}
-.email-button a:hover {
-  color: black;
-}
-header .about,
-.contact-me-title {
-  margin-top: 40px;
-  position: relative;
-  left: -320px;
-}
-.about-me-title,
-.contact-me-title,
-.coding-title h1 {
-  font-size: 60px;
-  font-weight: bolder;
-}
-
-section h1 {
-  margin-bottom: 60px;
-}
-
-section p {
-  border: black solid 1px;
-  text-align: justify;
-  padding: 40px;
-  margin-top: 25px;
-  font-size: 20px;
-  background-color: white;
-  box-shadow: 2px 11px 23px rgba(0, 0, 0, 0.1);
-}
-section .images-projects,
-.photo-about-me {
-  padding: 4px;
-  border: black solid 1px;
-}
-
-section .photo-about-me {
-  position: relative;
-  top: -350px;
-}
-section h2 {
-  font-size: 40px;
-}
-section .buddhabowl-description h2,
-.portfolio-description h2 {
-  text-align: end;
-}
-
-section .weather-description h2 {
-  text-align: start;
-}
-
-section .buddhabowl-description,
-.portfolio-description {
-  position: relative;
-  right: 80px;
-}
-section .weather-description {
-  position: relative;
-  left: 80px;
-}
-section .buddhabowl-project,
-.weather-project,
-.portfolio-project {
-  margin-bottom: 35px;
-}
-section .tech-list-weather,
-.project-links-weather {
-  padding-left: 0;
-}
-
-section .tech-list-buddha,
-.tech-list-weather,
-.project-links-buddha,
-.project-links-weather,
-.tech-list-portfolio,
-.project-links-portfolio {
-  list-style: none;
-  display: flex;
-}
-
-section .tech-list-buddha,
-.project-links-buddha,
-.tech-list-portfolio,
-.project-links-portfolio {
-  justify-content: flex-end;
-}
-section .tech-list-weather,
-.project-links-weather {
-  justify-content: flex-start;
-}
-section .project-links-buddha,
-.project-links-portfolio,
-.project-links-weather {
-  position: relative;
-  bottom: 20px;
-}
-
-section .contact-options {
-  list-style: none;
-  padding-inline-start: 0px;
-}
-section li {
-  font-size: 25px;
-  padding: 10px;
-}
-section .image-contact {
-  border: none;
-}
-.contact-options h3 {
-  font-weight: bold;
-  font-size: 30px;
-}
-.contact-options a {
-  text-decoration: none;
-  font-size: 20px;
-}
-
-footer .email-link {
-  text-decoration: none;
-  padding: 10px 25px;
-  background-color: white;
-  border: black solid 1px;
-  font-size: 20px;
-}
-.email-button {
-  margin-top: 30px;
-}
-footer {
-  margin-top: 90px;
-}
-
-footer a {
-  text-decoration: none;
-  font-size: 25px;
-  padding: 10px;
-}
-footer p {
-  padding-top: 100px;
-}
-.open-sourced a {
-  font-size: 1rem;
-  padding: 2px;
-  font-weight: bold;
-}
-
 @media (max-width: 1200px) {
   header .about,
   .contact-me-title {
@@ -285,4 +89,166 @@ footer p {
   footer {
     margin-top: 20px;
   }
+}
+body {
+  font-family: "Chonburi", cursive;
+  padding: 95px 95px 0px;
+  margin: 0px 2px 2px 2px;
+  border: black solid 4px;
+  border-top: none;
+}
+.logo {
+  margin-left: 20px;
+}
+header .hero {
+  margin-bottom: 20px;
+  font-family: "Chonburi", cursive;
+}
+
+header .introduction {
+  padding: 115px 100px;
+  text-align: justify;
+  font-size: 40px;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+
+section h1 {
+  font-size: 50px;
+  font-family: "Chonburi", cursive;
+  background-color: whitesmoke;
+  margin-bottom: 100px;
+}
+.btn-project {
+  border: black solid 1px;
+  font-size: 16px;
+  padding: 3px 7px;
+}
+button:hover {
+  background-color: chartreuse;
+  transition: all 2s ease-out;
+}
+section .col-md-6 {
+  margin-bottom: 115px;
+}
+section .text-box {
+  border: black 1px solid;
+}
+section i {
+  font-size: 23px;
+}
+.about-me p {
+  background-color: rgb(77, 138, 157);
+}
+.about-me .second-text-box {
+  margin: 10px;
+  position: relative;
+  left: 80px;
+  border: solid black 1px;
+}
+section p {
+  text-align: justify;
+  padding: 10px;
+  margin: 10px 5px 5px 10px;
+  font-size: 20px;
+  background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+section .img-projects {
+  padding: 4px;
+  border: black solid 1px;
+}
+section #img-dictionary:hover {
+  transform: translate(70px, -10px);
+}
+section #img-weather-vanilla:hover {
+  transform: translate(70px, -10px);
+}
+section #img-weather-react:hover {
+  transform: translate(-60px, 10px);
+}
+section #img-dictionary {
+  background-color: rgb(77, 138, 157);
+}
+section #img-weather-vanilla {
+  background-color: rgb(199, 173, 123);
+}
+section #img-weather-react {
+  background-color: rgb(194, 107, 217);
+}
+
+section h2 {
+  font-size: 35px;
+}
+section .weather-react {
+  text-align: end;
+}
+
+section .weather-vanilla,
+.dictionary {
+  text-align: start;
+}
+
+section .weather-react {
+  position: relative;
+  right: 80px;
+}
+section .weather-vanilla,
+.dictionary {
+  position: relative;
+  left: 80px;
+}
+.weather-react ul {
+  padding-left: 27rem;
+}
+section ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  font-family: "Roboto", sans-serif;
+}
+section li {
+  font-size: 20px;
+  padding: 5px;
+}
+section .about {
+  margin-top: 30px;
+}
+
+footer .email-link {
+  text-decoration: none;
+  padding: 10px 25px;
+  background-color: white;
+  border: black solid 1px;
+  font-size: 20px;
+}
+.email-button {
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+.email-button a:hover {
+  color: black;
+}
+footer {
+  margin-top: 70px;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+}
+footer p {
+  padding-top: 10px;
+}
+.open-sourced a {
+  font-size: 1rem;
+  padding: 2px;
+  font-weight: bold;
 }
