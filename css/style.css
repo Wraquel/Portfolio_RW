@@ -1,18 +1,6 @@
-@media (max-width: 1200px) {
-  header .about {
-    position: unset;
-  }
-  section .photo-about-me {
-    position: unset;
-  }
-}
 @media (max-width: 992px) {
   .navbar {
     padding: 0px;
-  }
-
-  footer .footer-item {
-    margin-bottom: 30px;
   }
 }
 
@@ -88,7 +76,7 @@ button {
   padding: 3px 7px;
 }
 button:hover {
-  background-color: rgb(114, 107, 217);
+  background-color: rgb(148, 141, 245);
   transition: all 1s ease;
 }
 section .col-md-6 {
@@ -133,7 +121,7 @@ section .img-projects {
   left: 20px;
 }
 #img-weather-vanilla {
-  background-color: rgb(176, 158, 120);
+  background-color: rgb(112, 150, 112);
   transition: 1s;
   z-index: -1;
   position: relative;
