@@ -1,40 +1,3 @@
-@media (max-width: 992px) {
-  .navbar {
-    padding: 0px;
-  }
-}
-
-@media (max-width: 576px) {
-  body {
-    padding: 70px 0px 0px;
-  }
-  .logo {
-    width: 50px;
-  }
-
-  header .introduction {
-    padding: 40px;
-  }
-  header .introduction h1 {
-    font-size: 30px;
-  }
-  section h1 {
-    font-size: 42px;
-  }
-  header .about {
-    font-size: 45px;
-  }
-  section h1 {
-    margin-bottom: 50px;
-  }
-  section h2 {
-    font-size: 30px;
-  }
-
-  footer {
-    margin-top: 20px;
-  }
-}
 body {
   font-family: "Chonburi", cursive;
   padding: 95px 95px 0px;
@@ -95,7 +58,7 @@ section i:hover {
   transition: 1s;
 }
 .about-me p {
-  background-color: rgb(129, 189, 207);
+  background-color: rgb(77, 112, 157);
 }
 .about-me .second-text-box {
   margin: 10px;
@@ -132,7 +95,7 @@ section .img-projects {
   right: 20px;
 }
 #img-weather-react {
-  background-color: rgb(194, 107, 217);
+  background-color: rgb(211, 94, 104);
   transition: 1s;
   z-index: -1;
   position: relative;
@@ -143,7 +106,7 @@ section .img-projects {
   left: 20px;
 }
 #img-dictionary {
-  background-color: rgb(77, 138, 157);
+  background-color: rgb(77, 112, 157);
   transition: 1s;
   z-index: -1;
   position: relative;
@@ -188,7 +151,7 @@ section .about {
 }
 
 footer {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 footer i {
@@ -202,4 +165,89 @@ footer i {
 .open-source a {
   color: rgb(77, 138, 157);
   text-decoration: none;
+}
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0px;
+  }
+  header .introduction {
+    padding: 40px 10px;
+  }
+  .about-me .second-text-box {
+    position: unset;
+  }
+}
+@media (max-width: 768px) {
+  header .introduction {
+    padding: 10px 20px;
+    font-size: 30px;
+  }
+
+  section h1 {
+    font-size: 40px;
+  }
+  #img-weather-vanilla,
+  #img-weather-react,
+  #img-dictionary {
+    display: none;
+  }
+
+  section .weather-react {
+    text-align: unset;
+  }
+
+  section .weather-vanilla,
+  .dictionary {
+    text-align: unset;
+  }
+
+  section .weather-react {
+    position: unset;
+    margin-top: -104px;
+  }
+  section .weather-vanilla,
+  .dictionary {
+    position: unset;
+  }
+  section .col-md-6 {
+    margin-bottom: 50px;
+  }
+  button {
+    background-color: rgb(148, 141, 245);
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+  .image-contact {
+    width: 300px;
+  }
+  #img-about-me {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding: 70px 0px 0px;
+  }
+  .logo {
+    width: 50px;
+  }
+
+  header .introduction h1 {
+    font-size: 30px;
+  }
+  header .about {
+    font-size: 45px;
+  }
+  section h1 {
+    margin-bottom: 50px;
+  }
+  section h2 {
+    font-size: 30px;
+  }
+  i {
+    color: rgb(112, 150, 112);
+  }
 }
