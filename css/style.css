@@ -57,9 +57,7 @@ section i:hover {
   bottom: -2px;
   transition: 1s;
 }
-.about-me p {
-  background-color: rgb(77, 112, 157);
-}
+
 .about-me .second-text-box {
   margin: 10px;
   position: relative;
