@@ -29,18 +29,29 @@ a:visited {
 section h1 {
   font-size: 50px;
   font-family: "Chonburi", cursive;
-  background-color: whitesmoke;
+  background-color: rgba(148, 141, 245, 0.623);
   margin-bottom: 100px;
+  box-shadow: -6px 6px 0 0 rgba(15, 15, 15, 0.89);
 }
 button {
-  border: black solid 1px;
-  background-color: white;
+  border: rgb(255, 211, 0) solid 2px;
+  background-color: rgb(148, 141, 245);
   font-size: 16px;
   padding: 3px 7px;
 }
 button:hover {
-  background-color: rgb(148, 141, 245);
   transition: all 1s ease;
+}
+i {
+  color: rgb(72, 185, 72);
+}
+section i {
+  font-size: 23px;
+}
+section i:hover {
+  position: relative;
+  bottom: -2px;
+  transition: 0.5s;
 }
 section .col-md-6 {
   margin-bottom: 115px;
@@ -49,19 +60,10 @@ section .text-box {
   border: black 1px solid;
   margin-bottom: 30px;
 }
-section i {
-  font-size: 23px;
-}
-section i:hover {
-  position: relative;
-  bottom: -2px;
-  transition: 1s;
-}
 
 .about-me .second-text-box {
   margin: 10px;
-  position: relative;
-  left: 80px;
+
   border: solid black 1px;
 }
 section p {
@@ -75,37 +77,50 @@ section p {
 section .img-projects {
   padding: 4px;
   border: black solid 1px;
+  opacity: 0.8;
+  z-index: -1;
 }
 
+#img-form {
+  transition: 0.5s;
+  z-index: -1;
+  position: relative;
+  right: -10px;
+}
+#page-form:hover #img-form {
+  transition: 0.5s;
+  right: 20px;
+  opacity: 1;
+}
 #weather-vanilla:hover #img-weather-vanilla {
-  transition: 1s;
+  transition: 0.5s;
   left: 20px;
+  opacity: 1;
 }
 #img-weather-vanilla {
-  background-color: rgb(112, 150, 112);
-  transition: 1s;
+  transition: 0.5s;
   z-index: -1;
   position: relative;
   left: -10px;
 }
 #weather-react:hover #img-weather-react {
-  transition: 1s;
+  transition: 0.5s;
   right: 20px;
+  opacity: 1;
 }
 #img-weather-react {
-  background-color: rgb(211, 94, 104);
-  transition: 1s;
+  transition: 0.5s;
   z-index: -1;
   position: relative;
   right: -10px;
 }
 #dictionary:hover #img-dictionary {
-  transition: 1s;
+  transition: 0.5s;
   left: 20px;
+  opacity: 1;
 }
 #img-dictionary {
-  background-color: rgb(77, 112, 157);
-  transition: 1s;
+  transition: 0.5s;
   z-index: -1;
   position: relative;
   left: -10px;
@@ -114,7 +129,8 @@ section .img-projects {
 section h2 {
   font-size: 35px;
 }
-section .weather-react {
+section .weather-react,
+.form {
   text-align: end;
 }
 
@@ -123,7 +139,8 @@ section .weather-vanilla,
   text-align: start;
 }
 
-section .weather-react {
+section .weather-react,
+.form {
   position: relative;
   right: 80px;
 }
@@ -184,13 +201,15 @@ footer i {
   section h1 {
     font-size: 40px;
   }
+  #img-form,
   #img-weather-vanilla,
   #img-weather-react,
   #img-dictionary {
     display: none;
   }
 
-  section .weather-react {
+  section .weather-react,
+  .form {
     text-align: unset;
   }
 
@@ -199,8 +218,11 @@ footer i {
     text-align: unset;
   }
 
-  section .weather-react {
+  section .weather-react,
+  .form {
     position: unset;
+  }
+  section .weather-react {
     margin-top: -104px;
   }
   section .weather-vanilla,
@@ -244,8 +266,5 @@ footer i {
   }
   section h2 {
     font-size: 30px;
-  }
-  i {
-    color: rgb(10, 173, 10);
   }
 }
