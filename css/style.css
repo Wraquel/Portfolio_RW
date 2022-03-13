@@ -199,11 +199,15 @@ footer i {
   .navbar {
     padding: 0px;
   }
+
   header .introduction {
     padding: 40px 10px;
   }
   .about-me .second-text-box {
     position: unset;
+  }
+  section h1 {
+    margin-bottom: 70px;
   }
 }
 @media (max-width: 768px) {
@@ -246,6 +250,9 @@ footer i {
   .dictionary {
     position: unset;
   }
+  .meditation-timer {
+    margin-bottom: -80px;
+  }
   section .col-md-6 {
     margin-bottom: 50px;
   }
@@ -278,9 +285,7 @@ footer i {
   header .about {
     font-size: 45px;
   }
-  section h1 {
-    margin-bottom: 20px;
-  }
+
   section h2 {
     font-size: 30px;
   }
