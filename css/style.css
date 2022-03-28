@@ -4,6 +4,7 @@ body {
   margin: 0px 2px 2px 2px;
   border: black solid 4px;
   border-top: none;
+  background: rgb(243, 243, 243);
 }
 .logo {
   margin-left: 20px;
@@ -12,7 +13,9 @@ header .hero {
   margin-bottom: 20px;
   font-family: "Chonburi", cursive;
 }
-
+.about-me p {
+  font-size: 18px;
+}
 header .introduction {
   padding: 115px 100px 70px;
   text-align: justify;
@@ -64,17 +67,17 @@ section .text-box {
 
 .about-me .second-text-box {
   margin: 10px;
-
   border: solid black 1px;
 }
 section p {
   text-align: justify;
   padding: 10px;
   margin: 10px 5px 5px 10px;
-  font-size: 20px;
+  font-size: 17px;
   background-color: whitesmoke;
   font-family: "Roboto", sans-serif;
 }
+
 section .img-projects {
   padding: 4px;
   border: black solid 1px;
