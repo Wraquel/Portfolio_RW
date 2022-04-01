@@ -86,14 +86,23 @@
     </nav>
     <section>
       <div class="container-fluid text-center">
-        <div class="about">
-          <h1>About me</h1>
+        <div>
+          <h1 data-aos="fade-up" data-aos-duration="2000">About me</h1>
         </div>
 
-        <div class="row">
-          <div class="col-md-7">
+        <div data-aos="fade-up" data-aos-duration="2500" class="row">
+          <div class="col-lg-5">
+            <img
+              src="/images/photo-about me.jpg"
+              width="400px"
+              id="img-about-me"
+              alt="photo-about-me"
+              class="img-projects img-fluid"
+            />
+          </div>
+          <div class="col-lg-7">
             <div class="about-me">
-              <div class="text-box">
+              <div>
                 <p>
                   I am a Brazilian Junior Front-End Developer and an experienced
                   Geological Engineer with Master's degree. Hands-on and
@@ -113,7 +122,7 @@
                   designed to become a professional developer.
                 </p>
               </div>
-              <div class="second-text-box">
+              <div>
                 <p>
                   Through coding I genuinely find great fulfillment in finding
                   the best ways for the projects I embrace. Also, I am eager to
@@ -125,21 +134,15 @@
               </div>
             </div>
           </div>
-
-          <div class="col-md-4">
-            <img
-              src="/images/photo-about me.jpg"
-              width="400px"
-              id="img-about-me"
-              alt="photo-about-me"
-              class="img-projects img-fluid"
-            />
-          </div>
         </div>
       </div>
     </section>
     <footer>
-      <div class="container-fluid text-center">
+      <div
+        class="container-fluid text-center"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <div class="row">
           <div class="footer-item col-lg-6 justify-content-evenly">
             <h3>Let's work together?</h3>
@@ -184,5 +187,9 @@
       >
       on GitHub
     </p>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
