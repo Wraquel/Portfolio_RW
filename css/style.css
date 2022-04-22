@@ -37,7 +37,7 @@ body {
 .hero {
   padding-top: 120px;
   padding-bottom: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .hero-title {
   margin-left: 50px;
@@ -179,6 +179,8 @@ a:hover {
 .footer {
   margin-bottom: 80px;
   padding-top: 50px;
+  margin-top: 50px;
+
 }
 .footer-item {
   padding-bottom: 70px;
